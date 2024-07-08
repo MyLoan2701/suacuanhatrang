@@ -676,4 +676,23 @@ a {
     flex-wrap: wrap;
     align-items: center;
 }
+
+#back_to_top{
+    /* display:none; */
+    padding:7px 15px;
+    color:#333;
+    background:rgba(200,200,200,0.5);
+    position:fixed;
+    right:15px;
+    bottom:40px;
+    cursor:pointer;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+    z-index:1000;
+}
+#back_to_top:hover{
+    background:#888;
+    color:#fff;
+}
 /* //==FOOTER */
