@@ -782,7 +782,7 @@
                             <span class="chan-footer"></span>
                         </div>
                         <div class="nd_fb">
-                            <div class="fb-page" data-href="https://www.facebook.com/suachuanhomkinhnhatrang" data-tabs="timeline" data-width="" data-height="" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/suachuanhomkinhnhatrang" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/suachuanhomkinhnhatrang">Cửa Nhôm Kính Nha Trang</a></blockquote></div>
+                            <div class="fb-page" data-href="https://www.facebook.com/suachuanhomkinhnhatrang" data-tabs="timeline" data-width="" data-height="300" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/suachuanhomkinhnhatrang" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/suachuanhomkinhnhatrang">Cửa Nhôm Kính Nha Trang</a></blockquote></div>
                         </div>
                     </div>
                 </div>
@@ -797,7 +797,8 @@
             </div>
         </div>
     </div>
-    <div id="back_to_top"><i class="fa-solid fa-arrow-up"></i></div>
+
+    <div><a onclick="topPage()" id="back_to_top"><i class="fa-solid fa-arrow-up"></i></a></div>
     
     <div class="box-add">
         <div class="box-add-item box-message wow swing">
@@ -844,6 +845,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- //bootstrap -->
 
+    <!-- bxSlider -->
     <script>
         $(document).ready(function(){
             $("#slider").bxSlider({
@@ -870,5 +872,28 @@
             });
         });
     </script>
+    <!-- //bxSlider -->
+
+
+    <!-- back-to-top -->
+    <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("back_to_top").style.display = "block";
+          } else {
+            document.getElementById("back_to_top").style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topPage() {
+          document.body.scrollTop = 0; // For Safari
+          document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+        </script>
+        <!-- //back-to-top -->
   </body>
 </html>

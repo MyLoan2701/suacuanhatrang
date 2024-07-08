@@ -684,7 +684,7 @@ a {
 }
  /* btn bottom */
 #back_to_top{
-    /* display:none; */
+    display:none;
     padding:7px 15px;
     color:#333;
     background:rgba(200,200,200,0.5);
