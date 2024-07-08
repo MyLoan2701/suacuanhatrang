@@ -676,7 +676,7 @@ a {
     flex-wrap: wrap;
     align-items: center;
 }
-
+ /* btn bottom */
 #back_to_top{
     /* display:none; */
     padding:7px 15px;
@@ -695,4 +695,77 @@ a {
     background:#888;
     color:#fff;
 }
+.box-add{
+    position:fixed;
+    right:15px;
+    bottom:80px;
+    z-index:99;
+}
+.box-add-item{
+    width:44px;
+    height:44px;
+    display:block;
+    margin-bottom:10px;
+    cursor:pointer;
+    text-align:center;
+    line-height:44px;
+    background:#1182FC;
+    border-radius:100%;
+    overflow:hidden;
+}
+.box-add-item{
+    position:relative;
+    overflow:unset !important;
+}
+.box-add-item a{
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    border-radius:50%;
+}
+.box-note{
+    position:absolute;
+    left:-165px;
+    top:6px;
+    width:150px;
+    padding:10px;
+    font-size:12px;
+    line-height:15px;
+    color:#fff;
+    background-color:rgba(0,0,0,0.5);
+    border-radius:6px;
+    display:none;
+}
+.box-note:after{
+    content:'';
+    position:absolute;
+    right:-7px;
+    top:10px;
+    border-top:7px solid transparent;
+    border-bottom:7px solid transparent;
+    border-left:7px solid rgba(0,0,0,0.5);
+}
+.box-add-item:hover .box-note{
+    display:block;
+}
+.box-add-item i.fa{
+    font-size:22px;
+    line-height:44px;
+    color:#fff;
+}
+.box-add-item.box-map{
+    background-color:#0037ff
+}
+.box-add-item.box-message{
+    background-color:#f7a400;
+}
+.box-add-item.box-call{
+    background-color:#7d51a0;
+}
+.box-facebook svg{
+    width:28px;
+}
+/* btn bottom */
 /* //==FOOTER */
