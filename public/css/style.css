@@ -633,7 +633,7 @@ a {
     font-size:14px;
     margin-bottom:1rem;
 }
-.f-item>i{
+.f-item>i, .f-item>svg{
     font-size:15px;
     line-height:23px;
     width:25px;
@@ -642,6 +642,11 @@ a {
     border:1px solid #fff;
     border-radius:100%;
     margin-right:10px;
+}
+.f-item>svg{
+    width:25px;
+    height:25px;
+    padding: 3px;
 }
 .f-item a{
     color:#fff;
