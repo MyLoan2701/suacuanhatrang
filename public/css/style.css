@@ -112,6 +112,7 @@ a {
     -webkit-transform: perspective(600px) rotateX(0);
     transform: perspective(600px) rotateX(0);
     -webkit-transform-origin: 0 0 0;
+    transform-origin: 0 0 0;
     opacity: 1;
     visibility: visible;
     transition: all .7s;
@@ -543,7 +544,12 @@ a {
     transition:1s;
     left:100%;
 }
-/* //==rin tuc */
+.bx-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0 !important;
+}
+/* //==tin tuc */
 
 /* ve chung toi */
 .vechungtoi{
@@ -766,6 +772,57 @@ a {
 }
 .box-facebook svg{
     width:28px;
+}
+@-webkit-keyframes swing{
+    20%{
+        -webkit-transform:rotate3d(0,0,1,15deg);
+        transform:rotate3d(0,0,1,15deg);
+    }
+    40%{
+        -webkit-transform:rotate3d(0,0,1,-10deg);
+        transform:rotate3d(0,0,1,-10deg);
+    }
+    60%{
+        -webkit-transform:rotate3d(0,0,1,5deg);
+        transform:rotate3d(0,0,1,5deg);
+    }
+    80%{
+        -webkit-transform:rotate3d(0,0,1,-5deg);
+        transform:rotate3d(0,0,1,-5deg);
+    }
+    100%{
+        -webkit-transform:rotate3d(0,0,1,0deg);
+        transform:rotate3d(0,0,1,0deg);
+    }
+}
+@keyframes swing{
+    20%{
+        -webkit-transform:rotate3d(0,0,1,15deg);
+        transform:rotate3d(0,0,1,15deg);
+    }
+    40%{
+        -webkit-transform:rotate3d(0,0,1,-10deg);
+        transform:rotate3d(0,0,1,-10deg);
+    }
+    60%{
+        -webkit-transform:rotate3d(0,0,1,5deg);
+        transform:rotate3d(0,0,1,5deg);
+    }
+    80%{
+        -webkit-transform:rotate3d(0,0,1,-5deg);
+        transform:rotate3d(0,0,1,-5deg);
+    }
+    100%{
+        -webkit-transform:rotate3d(0,0,1,0deg);
+        transform:rotate3d(0,0,1,0deg);
+    }
+}
+.swing{
+    -webkit-transform-origin:top center;
+    transform-origin:top center;
+    -webkit-animation-name:swing;
+    animation-name:swing;
+    animation-iteration-count:infinite;
 }
 /* btn bottom */
 /* //==FOOTER */
